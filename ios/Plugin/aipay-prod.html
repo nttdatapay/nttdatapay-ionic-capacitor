@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AtomInstaPay</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var cdnScript = document.createElement('script');
+        cdnScript.setAttribute('src', 'https://psa.atomtech.in/staticdata/ots/js/atomcheckout.js?v=' + Date.now());
+        document.head.appendChild(cdnScript);
+    </script>
+</head>
+
+<body>
+    <p style="text-align:center;margin-top:20px;">Please wait</p>
+    <script>
+        function mainInit(atomTokenId, merchId, custEmail, custMobile) {
+            const options = {
+                "atomTokenId": atomTokenId,
+                "merchId": merchId,
+                "custEmail": custEmail,
+                "custMobile": custMobile,
+                "returnUrl": "https://payment.atomtech.in/mobilesdk/param",
+                "userAgent": "mobile_webView"
+            }
+            let atom = new AtomPaynetz(options, 'uat');
+        }
+    </script>
+</body>
+
+</html>

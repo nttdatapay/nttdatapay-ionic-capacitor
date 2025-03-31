@@ -1,0 +1,95 @@
+{
+  "api": {
+    "name": "NdpsAESLibraryPlugin",
+    "slug": "ndpsaeslibraryplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "NdpsEncryption",
+        "signature": "(options: { value: string; encryptionKey: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; encryptionKey: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "ndpsencryption"
+      },
+      {
+        "name": "NdpsDecryption",
+        "signature": "(options: { value: string; decryptionKey: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; decryptionKey: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "ndpsdecryption"
+      },
+      {
+        "name": "NdpsSigatureGeneration",
+        "signature": "(options: { value: string; respHashKey: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; respHashKey: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "ndpssigaturegeneration"
+      },
+      {
+        "name": "NdpsAipayPayments",
+        "signature": "(options: { value: object; }) => Promise<{ value: object; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: object; }"
+          }
+        ],
+        "returns": "Promise<{ value: object; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "ndpsaipaypayments"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
